@@ -105,7 +105,7 @@ Start with planning agent.
 
 
 
-POWER_client = OpenAIChatCompletionClient(model = "gpt-4o-mini",api_key=os.environ.get("OPENAI_API_KEY"),base_url="http://188.245.32.59:4000/v1")
+POWER_client = OpenAIChatCompletionClient(model = "gpt-4o-mini",api_key=os.environ.get("OPENAI_API_KEY"),base_url=os.environ.get("OPENAI_API_BASE")
 
 
 async def handle_task(index):
