@@ -1,36 +1,18 @@
 import asyncio
-import os
-from custom_tools import *
-import autogen
 import autogen_agentchat.teams
 from autogen_agentchat.agents import AssistantAgent
 from autogen_agentchat.conditions import TextMentionTermination, MaxMessageTermination
-from autogen_agentchat.teams import RoundRobinGroupChat, SelectorGroupChat
 from autogen_agentchat.ui import Console
 from custom_tools import *
-from autogen_core.tools import FunctionTool
-from autogen.coding import LocalCommandLineCodeExecutor
-from autogen_ext.models.ollama import OllamaChatCompletionClient
 import dotenv
 dotenv.load_dotenv()
-import openpyxl
-from pathlib import Path
 from autogen_ext.models.openai import OpenAIChatCompletionClient
 from autogen import ConversableAgent, register_function
 import json
 import re
-
 import requests
 import subprocess
 import os
-
-import os
-from autogen import ConversableAgent
-from autogen.coding import LocalCommandLineCodeExecutor
-
-#from repo_1fake.astropy.coordinates.builtin_frames.ecliptic_transforms import true_baryecliptic_to_icrs
-
-# Create a temporary directory to store the code files.
 
 
 
