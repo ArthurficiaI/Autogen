@@ -1,3 +1,9 @@
+Execute the following commands:
+
+pip install autogen-agentchat
+pip install-ext[openai]
+pip install dotenv
+
 Create a .env file and specify the following variables in it:
 
 OPENAI_API_KEY = "your-api-key"
